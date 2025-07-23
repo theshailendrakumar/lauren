@@ -373,13 +373,6 @@ footer .bottom-footer{
 }
 }
 @media screen and (max-width: 600px) and (min-width:505px){
-     .bio .line1 , .line2{
-        padding:10px;
-        width:100%;
-         font-size:1.7rem;
-         min-height:90vh;
-        
-    }
     .case{
     display: flex;
     width: 100vw;
@@ -450,10 +443,19 @@ footer .bottom-footer{
 }
 
 @media screen and (max-width: 505px) and (min-width:305px){
-    .bio .line1{
-        padding:10px;
-        width:100%;
+    .bio{
+        margin: 0;
+        padding: 1rem;
+        /* height: 10vh; */
     }
+
+    .bio #line1,#line2{
+        width: 100%;
+        margin: 0;
+        font-size: 1.7rem;
+    }
+  
+  
     .nav{
         display: flex;
         flex-direction: column;
@@ -508,8 +510,8 @@ footer .bottom-footer{
     margin: 1rem auto 2rem auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 2rem;
+    min-height: 70vh;
 }
 
 .case .box .left-side{
