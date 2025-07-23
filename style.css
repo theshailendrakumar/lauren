@@ -1,0 +1,550 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+
+}
+
+
+.nav{
+    width: 100%;
+    min-height: 13vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    margin-left: 5vw;
+    width: 20%;
+    height: max-content;
+}
+
+.nav .logo img{
+    width: 33px;
+    height: 76px;
+    object-position: center center;
+    object-fit: contain;
+}
+
+
+.nav .links{
+    margin-right: 5vw;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav .links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links ul li{
+    margin-left: 3rem;
+    list-style-type: none;
+}
+
+.links ul li .link{
+    text-decoration: none;
+    color: black;
+    /* font-weight: 500; */
+    font-size: .95rem;
+}
+
+.links ul li .resume{
+    padding: 10px 15px ;
+    border: 1.7px solid rgba(0, 0, 0, 0.822);
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.829);
+}
+
+
+/* this is a bio part of website  */
+
+.bio{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+gap: 10px;
+    min-height: 100vh;
+}
+
+.bio #line1,#line2{
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-left: 9vw;
+}
+
+
+
+/* this is a case study part  */
+
+
+.case{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    /* margin: 10vh; */
+    padding: 3rem 0;
+}
+
+.case #case-bio{
+  width: 75%;
+  margin: 0 auto 0 auto;
+  font-size: 2.7rem;
+  color: rgba(0, 0, 0, 0.74);
+  font-weight: 400;
+}
+
+.case .box{
+    display: flex;
+    width: 75%;
+ min-height: 68vh;
+    background-color:rgb(190 220 211);
+    margin: 3rem auto 3rem auto;
+    padding: 3rem 2rem ;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    
+}
+
+.case .box .left-side{
+    width: 45%;
+    min-height: 68vh;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 1rem;
+}
+
+.box .left-side h2{
+    width: 80%;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.left-side p{
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.left-side #href{
+    text-decoration: none;
+    padding: 8px 15px ;
+    border: 1.5px solid black;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+.left-side .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-side .container .contain1{
+    width: 50%;
+}
+
+.container .contain1 h3{
+    font-weight: 500;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.contain1 p{
+    font-size: 1rem;
+    width: 90%;
+}
+
+
+.case .box .right-side{
+    width: 55%;
+}
+
+
+
+
+.case .box .right-side img{
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto 0 auto;
+}
+
+/* this is a footer part of the website and copyright */
+
+
+footer{
+    display: flex;flex-direction: column;
+    padding: 2rem 8rem;
+    width: 100%;
+    justify-content: space-between;
+    min-height:40vh ;
+    background-color: black;
+}
+
+footer .top-footer{
+    display: flex;
+    width: 90%;
+    padding: 2rem 0;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+
+footer .top-footer .bx1 h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+
+.top-footer .bx1 p{
+    color: rgba(255, 255, 255, 0.884);
+}
+
+
+.top-footer  .bx2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+    width: 20%;
+    /* justify-content: space-between; */
+
+
+}
+
+
+.top-footer .bx2 a{
+text-decoration: none;
+color: rgba(255, 255, 255, 0.747);
+
+}
+
+
+
+footer .bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 2rem 0;
+}
+
+
+.bottom-footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.bottom-footer ul li{
+    list-style-type: none;
+}
+
+.bottom-footer ul li .fa{
+    text-decoration: none;
+    color: wheat;
+
+}
+
+
+
+
+/* here is responsive  */
+@media screen and (max-width: 1000px) and (min-width:800px) {
+
+
+.case{
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    padding: 3rem 0;
+}
+.case .box{
+    width: 90%;
+    margin: 2rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.case .box .left-side{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 2rem;
+}
+
+
+.case .box .right-side{
+    width: 90%;
+}
+
+
+.case .box .left-side h2{
+    width:100%;
+    padding: 0;
+}
+}
+
+
+@media screen and (max-width: 800px) and (min-width:600px){
+    .case{
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    padding: 3rem 0;
+}
+.case .box{
+    width: 90%;
+    margin: 2rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem ;
+    gap: 2rem;
+}
+
+.case .box .left-side{
+    width: 90%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 1rem;
+}
+
+
+.case .box .right-side{
+    width: 90%;
+}
+
+
+.case .box .left-side h2{
+    width:100%;
+    padding: 0;
+}
+footer{
+    padding: 2rem ;
+}
+
+
+footer .top-footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 10px;
+    margin: auto;
+    gap: 30px;
+}
+
+footer .top-footer .bx2{
+width: 100%;
+}
+
+footer .bottom-footer{
+    padding: 1rem;
+    margin: 0;
+}
+
+footer .bottom-footer{
+    width: 90%;
+    margin: auto;
+}
+}
+@media screen and (max-width: 600px) and (min-width:505px){
+    .case{
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    padding: 3rem 0;
+}
+
+.case #case-bio{
+    padding: 0rem 1rem 1rem 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.case .box{
+    width: 95%;
+    margin: 1rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.case .box .left-side{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 1rem;
+}
+
+
+.case .box .right-side{
+    width: 90%;
+}
+
+
+.case .box .left-side h2{
+    width:100%;
+    padding: 0;
+}
+footer{
+    padding: 2rem ;
+}
+
+
+footer .top-footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0
+    ;
+    margin: auto;
+    gap: 30px;
+}
+
+footer .top-footer .bx2{
+width: 100%;
+}
+
+footer .bottom-footer{
+    padding: 1rem;
+    margin: 0;
+}
+
+footer .bottom-footer{
+    width: 90%;
+    margin: auto;
+}
+}
+
+@media screen and (max-width: 505px) and (min-width:305px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        min-height: 20vh;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .nav .logo{
+        width: 20%;
+    }
+
+    .nav .logo img{
+        margin: auto;
+    }
+
+    .nav .links{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .links ul{
+        display: flex;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .links ul li{
+
+        margin: 1rem;
+        /* padding: 0; */
+    }
+       .case{
+    display: flex;
+    width: 100vw;
+    height: max-content;
+    padding: 3rem 0;
+}
+
+.case #case-bio{
+    padding: 0rem 1rem 1rem 1rem;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.case .box{
+    width: 95%;
+    margin: 1rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.case .box .left-side{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 1rem;
+}
+
+
+.case .box .right-side{
+    width: 90%;
+}
+
+
+.case .box .left-side h2{
+    width:100%;
+    padding: 0;
+}
+footer{
+    padding: 2rem ;
+}
+
+
+footer .top-footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0
+    ;
+    margin: auto;
+    gap: 30px;
+}
+
+footer .top-footer .bx2{
+width: 100%;
+}
+
+footer .bottom-footer{
+    padding: 1rem;
+    margin: 0;
+}
+
+footer .bottom-footer{
+    width: 90%;
+    margin: auto;
+}
+}
