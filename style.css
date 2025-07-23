@@ -376,6 +376,9 @@ footer .bottom-footer{
      .bio .line1 , .line2{
         padding:10px;
         width:100%;
+         font-size:1.7rem;
+         min-height:90vh;
+        
     }
     .case{
     display: flex;
